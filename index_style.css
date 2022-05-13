@@ -1,0 +1,75 @@
+/* background */
+
+body{
+    background-color: rgb(223, 220, 220);
+}
+
+/* container with scrollbar */
+
+.container{
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container h1{
+    font-weight: 600;
+}
+
+/* search bar */
+.input-group input{
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+button{
+    margin-left: 1%;
+}
+
+/* styling for list items and list */
+
+#auto-complete{
+    color: black;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    margin-top: -1.5%;
+}
+
+/* li of autosuggest */
+
+#auto-complete li{
+    width: 25vw;
+    cursor: pointer;
+}
+
+#auto-complete-container{
+    max-height: 30vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* media query for responsive dsign */
+
+@media screen and (max-width: 600px){
+
+    .input-group input{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #auto-complete li{
+        width: 40vw;
+        cursor: pointer;
+    }
+
+    button{
+        margin-top: 1%;
+    }
+
+
+
+
+}

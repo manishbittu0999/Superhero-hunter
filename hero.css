@@ -1,0 +1,97 @@
+/* background */
+
+body{
+    background-color: rgb(223, 220, 220);
+}
+
+/* container for image and data */
+.container{
+    display: flex;
+    margin-top: 0.5%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* hero image */
+.card{
+    display: inline-block;
+    margin-top: 0px;
+}
+
+/* container for info about hero */
+.jumbotron{
+    display: inline-block;
+    width: 60%;
+    min-height: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 1%;
+}
+
+.jumbotron h1{
+    font-size: 4rem;
+}
+
+/* hero details below image */
+.details{
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid grey;
+    border-bottom-width: 80%;
+    border-radius: 25px;
+}
+
+/* the horizon rule to differentiate between details */
+
+hr{
+    border: 2px solid white;
+}
+
+button{
+    margin-top: 1%;
+}
+
+/* toast message */
+#msg-container{
+    position: absolute;
+    left: 40%;
+    right: auto;
+    top: 40%;
+    padding: 3%;
+    background-color: rgba(255,255,255,0.9);
+    display: none;
+}
+
+#message{
+    font-size: 1.2rem;
+}
+
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        width: fit-content;
+        overflow: hidden;
+    }
+
+    .card{
+        display: block;
+    }
+
+    .jumbotron{
+        display: block;
+        width: 100%;
+    }
+
+    .jumbotron h1{
+        font-size: 2rem;
+    }
+
+    #msg-container{
+        top: 125%;
+    }
+}
